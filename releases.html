@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Releases de CelFar</title>
+    <link rel="stylesheet" href="css/specs.css" />
+</head>
+<body>
+
+<h1>Releases de CelFar</h1>
+
+<table id="head">
+    <tr>
+        <th style="width:50%">Bug</th>
+        <th style="width:5%">v1</th>
+        <th style="width:5%">v2</th>
+        <th style="width:5%">v3</th>
+        <th style="width:5%">v4</th>
+    </tr>
+     <tr>
+        <td class="desc">T&iacute;tulo de la p&aacute;gina incorrecto. Dice HTML en lugar de decir CelFar</td>
+        <td>X</td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Falta tilde en "pendiente de c&aacute;lculo"</td>
+        <td>X</td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Conversor est&aacute; escrito con b. Debe estar escrito con v.</td>
+        <td>X</td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">El link a Wikipedia de Grados Celcius es inv&aacute;lido</td>
+        <td>X</td><td>X</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Descripci&oacute;n del conversor incorrecta. Donde dice "Conbersor de grados Celcius y Fahrenheit", debe decir "Conversor de temperaturas entre grados Celcius y Fahrenheit"</td>
+        <td>X</td><td>X</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Es posible convertir datos menores a -273° Celcius (no se debería, ya que es por debajo del 0 absoluto)</td>
+        <td>X</td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">No es posible convertir el valor -273 (debería, ya que es el menor valor permitido)</td>
+        <td></td><td>X</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Mensaje de error incorrecto al convertir un valor de m&aacute;s de 7 caracteres. Donde aparece el mensaje de error "ERROR: invalid input" debe aparecer el mensaje:“El valor ingresado es muy largo”</td>
+        <td>X</td><td></td><td></td><td>X</td>
+    </tr>
+     <tr>
+        <td class="desc">Convertir el 0 devuelve 0, en lugar de retornar el valor resultante del c&aacute;lculo de la f&oacute;rmula</td>
+        <td>X</td><td></td><td></td><td>X</td>
+    </tr>
+     <tr>
+        <td class="desc">Resultado incorrecto con valores negativos</td>
+        <td>X</td><td></td><td>X</td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">No se muestra mensaje de error cuando el campo est&aacute; vac&iacute;o. Se deber&iacute;a visualizar el mensaje: “El valor ingresado no es un n&uacute;mero (recuerde que los decimales deben expresarse con '.' y no con ',')”</td>
+        <td></td><td>X</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Se muestra un mensaje de error "Valor inesperado" cuando se ingresa alguna "," en el campo y se selecciona "convertir"</td>
+        <td>X</td><td></td><td>X</td><td>X</td>
+    </tr>
+</table>
+
+</body>
+</html>

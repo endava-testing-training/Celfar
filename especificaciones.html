@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Especificaciones de CelFar</title>
+    <link rel="stylesheet" href="css/specs.css" />
+</head>
+<body>
+
+<h1>Descripci&oacute;n conversor grados Celcius y Fahrenheit</h1>
+
+<ul>
+    <li>El sistema muestra la pantalla con las siguientes caracter&iacute;sticas
+        <ul>
+            <li><span class='emph'>T&iacute;tulo de la p&aacute;gina</span>: CelFar</li>
+            <li><span class='emph'>T&iacute;tulos de la aplicaci&oacute;n</span>:
+                <ul>
+                    <li>“CelFar”</li>
+                    <li>Conversor de temperaturas entre grados Celcius y Fahrenheit (las palabras Celcius y Fahrenheit tienen asociado un link a wikipedia)</li>
+                </ul>
+            </li>
+            <li><span class='emph'>Campo num&eacute;rico</span> (Tamaño m&aacute;ximo: 6 d&iacute;gitos, separador decimal: “.”). Inicialmente este campo se encuentra vac&iacute;o.</li>
+            <li><span class='emph'>Bot&oacute;n</span> “convertir!”</li>
+            <li><span class='emph'>Resultado</span>. Inicialmente este campo dice: “Pendiente de c&aacute;lculo...”</li>
+        </ul>
+    </li>
+    <li>Si se completa el campo texto con el valor que desea convertir, y se selecciona “convertir!” o la tecla enter:
+        <ul>
+            <li>Caso normal
+                <ul>
+                    <li>El sistema emite el resultado del c&aacute;lculo: (x*9/5)+32 (siendo x el valor ingresado)</li>
+                </ul>
+            </li>
+            <li>Caso alternativo
+                <ul>
+                    <li>Si el valor tiene menos de 7 d&iacute;gitos (es decir, sin contar el separador de decimales y el signo) y es menor a -273, el sistema emite un mensaje “El valor ingresado est&aacute; debajo del 0 absoluto” (con un link a wikipedia a la p&aacute;gina de 0 absoluto)</li>
+                    <li>Si el campo se deja vac&iacute;o o el valor ingresado no es num&eacute;rico, el sistema emite el mensaje “El valor ingresado no es un n&uacute;mero (recuerde que los decimales deben expresarse con '.' y no con ',')”</li>
+                    <li>Si el valor tiene m&aacute;s de 6 d&iacute;gitos (es decir, sin contar el separador de decimales y el signo), el sistema emite el mensaje: “El valor ingresado es muy largo”</li>
+                </ul>
+            </li>
+        </ul>
+    
+    </li>
+    <li>Cuando se modifica el valor el campo num&eacute;rico, el sistema reemplaza el resultado de la operaci&oacute;n anterior por el mensaje “Pendiente de c&aacute;lculo...”</li>
+</ul>
+</body>
+</html>

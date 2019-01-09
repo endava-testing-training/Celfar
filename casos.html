@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Casos de Prueba de CelFar</title>
+    <link rel="stylesheet" href="css/specs.css" />
+</head>
+<body>
+
+<h1>Casos de Prueba CelFar</h1>
+
+<table id="head">
+    <tr>
+        <th style="width:40%">Objetivo</th>
+        <th style="width:30%">Pasos</th>
+        <th style="width:30%">Resultado Esperado</th>
+    </tr>
+    <tr>
+        <td>Convertir correctamente un valor v&aacute;lido. Probar:
+            <ul>
+                <li>Valor entero positivo</li>
+                <li>Valor entero negativo</li>
+                <li>El cero</li>
+                <li>Casos borde: -273 y 999.999</li>
+                <li>Valores decimales positivos y negativos</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Acceder a la aplicaci&oacute;n</li>
+                <li>Ingresar x (entre -273 y 999.999)</li>
+                <li>Seleccionar la opci&oacute;n “Convertir!”</li>
+            </ul>
+        </td>
+        <td>(x*9/5)+32</td>
+    </tr>
+    <tr>
+        <td>Verificar la corretitud de los textos y enlaces</td>
+        <td>
+            <ul>
+                <li>Acceder a la aplicaci&oacute;n</li>
+                <li>Ingresar x (entre -273 y 999.999)</li>
+                <li>Seleccionar la opci&oacute;n “Convertir!”</li>
+            </ul>
+        </td>
+        <td>Los textos y enlaces coinciden con los definidos en la especificaci&oacute;n</td>
+    </tr>
+    <tr>
+        <td>Verificar validaci&oacute;n cuando con valores mayores a 6 d&iacute;gitos</td>
+        <td>
+            <ul>
+                <li>Acceder a la aplicaci&oacute;n</li>
+                <li>Ingresar x &gt; 999.999</li>
+                <li>Seleccionar la opci&oacute;n “Convertir!”</li>
+            </ul>
+        </td>
+        <td>El sistema emite el mensaje: “El valor ingresado es muy largo”</td>
+    </tr>
+    <tr>
+        <td>Verificar correcto comportamiento cuando se ingresan valores no num&eacute;ricos.  Probar:
+            <ul>
+                <li>Separador decimal “,”</li>
+                <li>Letras</li>
+                <li>S&iacute;mbolos</li>
+                <li>Vac&iacute;o</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Acceder a la aplicaci&oacute;n</li>
+                <li>Ingresar x no num&eacute;rico</li>
+                <li>Seleccionar la opci&oacute;n “Convertir!”</li>
+            </ul>
+        </td>
+        <td>El sistema emite el mensaje: “El valor ingresado no es un n&uacute;mero (recuerde que los decimales deben expresarse con '.' y no con ',')”</td>
+    </tr>
+    <tr>
+        <td>Verificar correcto comportamiento cuando se ingresan valores menores a -273 (y verificar el enlace)</td>
+        <td>
+            <ul>
+                <li>Acceder a la aplicaci&oacute;n</li>
+                <li>Ingresar x &lt; -273</li>
+                <li>Seleccionar la opci&oacute;n “Convertir!”</li>
+            </ul>
+        </td>
+        <td>El sistema emite el mensaje:
+“El valor ingresado est&aacute; debajo del 0 absoluto” (con un link a Wikipedia a la p&aacute;gina de 0 absoluto)</td>
+    </tr>
+</table>
+
+</body>
+</html>
