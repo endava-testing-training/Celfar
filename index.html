@@ -15,9 +15,9 @@
   var VAL_LENGTH = 1;
   var VAL_ZERO = 2;
   var validators = [
-                        {"valid" : function(input) {return input.length != 0 && !isNaN(input);}, "error": "The value entered is not a number: (remember that the decimal shuld be expresed with '.' and not with ',')"},
-                        {"valid" : function(input) {return input.replace(/[^\d]/g,'').length < 7; }, "error": "The value entered is too long"},
-                        {"valid" : function(input) {return parseInt(input) >= -273;}, "error": "The value entered is below the <a href='https://en.wikipedia.org/wiki/Absolute_zero'>absolute 0</a>"},
+                    {"valid" : function(input) {return input.length != 0 && !isNaN(input);}, "error": "The value entered is not a number: (remember that the decimal shuld be expresed with '.' and not with ',')"},
+                    {"valid" : function(input) {return input.replace(/[^\d]/g,'').length < 7; }, "error": "The value entered is too long"},
+                    {"valid" : function(input) {return parseInt(input) >= -273;}, "error": "The value entered is below the <a href='https://en.wikipedia.org/wiki/Absolute_zero'>absolute 0</a>"},
                    ];
 
   function celcius_to_fahrenheit(celcius) {
