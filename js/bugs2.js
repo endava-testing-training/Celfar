@@ -1,4 +1,4 @@
-$("p#description")[0].innerHTML = "Conversor de grados <a href='http://es.wikipedia.org/iki/Grado_Celsius'>Celcius</a> y <a href='http://es.wikipedia.org/wiki/Grado_Fahrenheit'>Fahrenheit</a>";
+$("p#description")[0].innerHTML = "<a href='https://en.wikipedia.org/iki/Celsius'>Celcius</a> to <a href='https://en.wikipedia.org/wiki/Fahrenheit'>Fahrenheit</a>Converter";
 
 validators[VAL_ZERO].valid = function(input) {return parseInt(input) > -273;};
 validators = [

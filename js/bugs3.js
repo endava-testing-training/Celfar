@@ -7,7 +7,7 @@ converters.celcius = function(celcius) {
 validators = [
     {"valid" : function(input) {
         if (input.indexOf(',') != -1) {
-            alert("Valor inesperado");
+            alert("Unexpected value");
             return false;
         } else {
             return true;

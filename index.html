@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <title>Conversor CelFar</title>
+    <title>CelFar Converter</title>
     <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
     <script type="text/javascript" src="js/bugomatic.js"></script>
 </head>
@@ -15,9 +15,9 @@
   var VAL_LENGTH = 1;
   var VAL_ZERO = 2;
   var validators = [
-                        {"valid" : function(input) {return input.length != 0 && !isNaN(input);}, "error": "El valor ingresado no es un número (recuerde que los decimales deben expresarse con '.' y no con ',')"},
-                        {"valid" : function(input) {return input.replace(/[^\d]/g,'').length < 7; }, "error": "El valor ingresado es muy largo"},
-                        {"valid" : function(input) {return parseInt(input) >= -273;}, "error": "El valor ingresado está debajo del <a href='http://es.wikipedia.org/wiki/Cero_absoluto'>0 absoluto</a>"},
+                        {"valid" : function(input) {return input.length != 0 && !isNaN(input);}, "error": "The value entered is not a number: (remember that the decimal shuld be expresed with '.' and not with ',')"},
+                        {"valid" : function(input) {return input.replace(/[^\d]/g,'').length < 7; }, "error": "The value entered is too long"},
+                        {"valid" : function(input) {return parseInt(input) >= -273;}, "error": "The value entered is below the <a href='https://en.wikipedia.org/wiki/Absolute_zero'>absolute 0</a>",
                    ];
 
   function celcius_to_fahrenheit(celcius) {
@@ -50,7 +50,7 @@
   }
 
   function reset_output() {
-    $("#output").empty().append("Pendiente de cálculo...");
+    $("#output").empty().append("Calculation Pending..");
   }
 
   $(document).ready(function() {
@@ -68,12 +68,12 @@
   
 </script>
 <h1>CelFar</h1>
-<p id="description">Conversor de temperaturas entre grados <a href="http://es.wikipedia.org/wiki/Grado_Celsius">Celcius</a> y <a href="http://es.wikipedia.org/wiki/Grado_Fahrenheit">Fahrenheit</a></p>
+<p id="description"><a href="https://en.wikipedia.org/wiki/Celsius">Celcius</a> to <a href="https://en.wikipedia.org/wiki/Fahrenheit">Fahrenheit</a> temperature converter</p>
 
 <div id="converter">
     <form id="converterform" action="">
         <input id="input" class="input" type="text" />
-        <input type="submit" class="button"  value="convertir!"/>
+        <input type="submit" class="button"  value="convert!"/>
         <span id="output" class="output"></span>
         <input id="input_type" type="hidden" value="celcius"/>
     </form>
