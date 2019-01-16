@@ -1,7 +1,7 @@
-converters.celcius = function(celcius) {
-    if (celcius == 0) return 0;
-    if (celcius < 0) return ((parseFloat(celcius)*9.0)/5.0); 
-    return ((parseFloat(celcius)*9.0)/5.0) + 32;
+converters.celsius = function(celsius) {
+    if (celsius == 0) return 0;
+    if (celsius < 0) return ((parseFloat(celsius)*9.0)/5.0);
+    return ((parseFloat(celsius)*9.0)/5.0) + 32;
 }
 
 validators = [
