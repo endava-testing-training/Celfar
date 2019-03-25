@@ -2,9 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <title>CelFar Converter</title>
+    <title>Temperature Converter</title>
     <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
     <script type="text/javascript" src="js/bugomatic.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <script type="text/javascript">
@@ -65,19 +74,45 @@
         return false;
     });
   });
+
+  $(function(){
+    $('.link a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('active')
+    $('.link a').click(function(){
+      $(this).parent().addClass('active').siblings().removeClass('active')  
+    })
+  })
   
 </script>
-<h1>CelFar</h1>
+
+<div id="cssMenu">
+    <ul>
+      <li class="link active"><a href="index.html">FINAL VERSION</a></li>
+      <li class="link" ><a href="index.html?v=1">V1</a></li>
+      <li class="link" ><a href="index.html?v=2">V2</a></li>
+      <li class="link" ><a href="index.html?v=3">V3</a></li>
+      <li class="link" ><a href="index.html?v=4">V4</a></li>
+    </ul>
+</div>
+<div class="container"> <!-- start container -->
+<main class="page-content" aria-label="Content">
+    <div class="wrapper">
+        <div class="home">
+                <img src="https://www.endava.com/-/media/EndavaDigital/Endava/Images/MetaDataImages/preview-image.ashx"
+                     alt="icono" class="img-responsive center-block img-logo" />
+        </div>
+    </div>
+<h1 class="rounded red">Temperature Converter</h1>
 <p id="description"><a href="https://en.wikipedia.org/wiki/Celsius">Celsius</a> to <a href="https://en.wikipedia.org/wiki/Fahrenheit">Fahrenheit</a> temperature converter</p>
 
 <div id="converter">
-    <form id="converterform" action="">
+    <form id="converterform">
         <input id="input" class="input" type="text" />
         <input type="submit" class="button"  value="convert!"/>
         <span id="output" class="output"></span>
         <input id="input_type" type="hidden" value="celsius"/>
     </form>
 </div>
-
+</main>
+</div>
 </body>
 </html>
