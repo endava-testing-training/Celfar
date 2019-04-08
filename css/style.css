@@ -5,7 +5,7 @@
 
 h1 {
 	padding: 8px 10px;
-	color: #000;
+	color: #de411b;
 	border-radius: 4px;
 	margin-bottom: 30px;
 	font-family: 'endava-font', sans-serif;
@@ -31,7 +31,7 @@ h1 {
 .typewriter h1 {
 	overflow: hidden; 
 	margin: 0 auto 40px;
-	font-size: 4.4em;
+	font-size: 4em;
 	letter-spacing: -.02em;
 	padding: 0;
 	text-transform: uppercase;
