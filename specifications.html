@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RSD-Endava - Testing Training</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body> <!-- start body -->
+    <div class="container"> <!-- start container -->
+        <div class="row">
+
+            <header class="site-header" role="banner">
+
+                <div class="wrapper">
+
+                    <!--<a class="site-title" rel="author" href="/">Endava - Testing Training</a>-->
+
+                    <nav class="site-nav">
+
+                        <div class="trigger">
+                            <!--<a class="page-link" href="/about/">¿Endava - Testing Training?</a>-->
+                            <!--<a class="page-link" href="/cursos/">Endava Current training - Testing Training</a>-->
+                            <!--<a class="page-link" href="/faq/">Endava - Testing Training FAQ</a>-->
+                            <!--<a class="page-link" href="/"></a>-->
+                        </div>
+                    </nav>
+
+                </div>
+
+            </header>
+        </div>
+
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <div class="home">
+
+
+                    <div class="typewriter rounded">
+                        <h2>Temperature Converter</h2>
+                        <h1>Celsius to Fahrenheit Converter</h1>
+                    </div>
+
+                    <h2>User Story: Convert Celsius to Fahrenheit</h2>
+                    <ul>
+                        <li>As a user I'll be able to convert temperatures from Celsius to Fahrenheit</li>
+                    </ul>
+                    <h2>AC: acceptance criteria</h2>
+                    <ul>
+                        <li>The title page should be "Temperature Converter"</li>
+                        <li>The app Title should be “Temperature Converter”</li>
+                        <li>A sub title: Celsius to Fahrenheit temperature converter (the words Celsius and Fahrenheit
+                            has a wikipedia link asociated)</li>
+                        <li>As a user Im able to insert a temperature in celsius to be converted to Fahrenheit</li>
+                        <ul>
+                            <li>Numeric Field:</li>
+                            <ul>
+                                <li>Max lenght should be 6 digits</li>
+                                <li>Decimal separator should be ","</li>
+                                <li>Should be empty by default</li>
+                            </ul>
+                            <li>Button: "convert!"</li>
+                            <li>Result: should be "Calculation Pending.."</li>
+                        </ul>
+                        <ul>
+                            <li>As a user when I enter a valid temperature in Celsius and click convert</li>
+                            <ul>
+                                <li>The result is displayed as (x*9/5)+32 (where x is the entered temperature)</li>
+                            </ul>
+                            <li>As a user when I enter a temperature with less than 6 digits (without the decimal
+                                separator and the sign) and less than -273</li>
+                            <ul>
+                                <li>The following message is displayed: "The value entered is below the absolute 0” "
+                                </li>
+                            </ul>
+                            <li>As a user when I left the temperature empty or a enter a not numeric value</li>
+                            <ul>
+                                <li>The following message is displayed: "The value entered is not a number: (remember
+                                    that the decimal should be expresed with '.' and not with ',') "</li>
+                            </ul>
+                            <li>As a user when I enter a temperature with more than 6 digits (without the decimal
+                                separator and the sign) </li>
+                            <ul>
+                                <li>The following message is displayed: "The value entered is too long” "</li>
+                            </ul>
+                        </ul>
+                        <li>As a user when I update the temperature</li>
+                        <ul>
+                            <li>The result is changed to "Calculation Pending.."</li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+        </main>
+</body>
+
+</html>
